@@ -14,7 +14,7 @@ class RockPaperScissors {
 	
 	public static void main(String args[]) {
 		
-		while(uScore < 3 && cScore < 3) {		// Rounds continue until someone reaches 3 points.
+		while(uScore < 3 || cScore < 3) {		// Rounds continue until someone reaches 3 points.
 			
 			System.out.println("Choose your weapon: rock, paper, or scissors");
 			char uChoice = userInput.nextLine().toUpperCase().charAt(0);		// User chooses weapon
